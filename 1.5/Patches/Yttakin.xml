@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="Yttakin"]/iconPath</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Yttakin"]</xpath>
+      <value>
+        <iconPath />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Yttakin"]/iconPath</xpath>
+    <value>
+      <iconPath>UI/Icons/Xenotypes/Yttakin</iconPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="Yttakin"]/inheritable</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Yttakin"]</xpath>
+      <value>
+        <inheritable />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Yttakin"]/inheritable</xpath>
+    <value>
+      <inheritable>true</inheritable>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="Yttakin"]/label</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Yttakin"]</xpath>
+      <value>
+        <label />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Yttakin"]/label</xpath>
+    <value>
+      <label>Yttakin</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="Yttakin"]/genes</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Yttakin"]</xpath>
+      <value>
+        <genes />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Yttakin"]/genes</xpath>
+    <value>
+      <genes>
+        <li>BS_CannotWearArmor</li>
+        <li>BS_ToughSkin</li>
+        <li>BS_LargeFrame</li>
+        <li>AnimalWarcall</li>
+        <li>WoundHealing_Slow</li>
+        <li>PsychicAbility_Dull</li>
+        <li>NakedSpeed</li>
+        <li>BS_AnimalFriend</li>
+        <li>Aggression_Aggressive</li>
+        <li>MeleeDamage_Strong</li>
+        <li>Sleepy</li>
+        <li>Robust</li>
+        <li>Tail_Furry</li>
+        <li>VRE_CanineTail</li>
+        <li>VRE_CanineEars</li>
+        <li>VRE_FelineEars</li>
+        <li>BS_FoxEars</li>
+        <li>Hair_BaldOnly</li>
+        <li>Beard_Always</li>
+        <li>VoiceRoar</li>
+        <li>Body_Hulk</li>
+        <li>RS_Naturalist</li>
+        <li>VRESaurids_Pheromones</li>
+        <li>VRE_Talons</li>
+        <li>Furskin</li>
+        <li>VRE_PackMentality</li>
+        <li>AptitudeRemarkable_Animals</li>
+        <li>AptitudePoor_Crafting</li>
+        <li>AptitudePoor_Artistic</li>
+        <li>AptitudeTerrible_Social</li>
+      </genes>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="RE_Elve"]/iconPath</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="RE_Elve"]</xpath>
+      <value>
+        <iconPath />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="RE_Elve"]/iconPath</xpath>
+    <value>
+      <iconPath>UI/Icons/ElveXenotypeIcon</iconPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="RE_Elve"]/inheritable</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="RE_Elve"]</xpath>
+      <value>
+        <inheritable />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="RE_Elve"]/inheritable</xpath>
+    <value>
+      <inheritable>true</inheritable>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="RE_Elve"]/label</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="RE_Elve"]</xpath>
+      <value>
+        <label />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="RE_Elve"]/label</xpath>
+    <value>
+      <label>Elve</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="RE_Elve"]/genes</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="RE_Elve"]</xpath>
+      <value>
+        <genes />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="RE_Elve"]/genes</xpath>
+    <value>
+      <genes>
+        <li>Ageless</li>
+        <li>BS_Diet_Herbivore</li>
+        <li>Immunity_Strong</li>
+        <li>AG_Clean</li>
+        <li>VRE_SlowAging</li>
+        <li>VRE_ProgressiveAttunement</li>
+        <li>PsychicAbility_Enhanced</li>
+        <li>MinTemp_SmallIncrease</li>
+        <li>MaxTemp_SmallDecrease</li>
+        <li>AG_ToxResist_Vulnerability</li>
+        <li>Aggression_DeadCalm</li>
+        <li>RE_MentalFanaticism</li>
+        <li>RE_SuperiorityComplex</li>
+        <li>LowSleep</li>
+        <li>BS_EverFertile</li>
+        <li>Libido_Low</li>
+        <li>VU_NearSterile</li>
+        <li>VRE_LongPregnancy</li>
+        <li>Ears_Pointed</li>
+        <li>Beauty_Pretty</li>
+        <li>Hair_LongOnly</li>
+        <li>Beard_NoBeardOnly</li>
+        <li>Body_Standard</li>
+        <li>Body_Thin</li>
+        <li>AFU_HA_ElfEar</li>
+        <li>DV_ExtendedMemory</li>
+        <li>DarkVision</li>
+        <li>Hair_Grayless</li>
+        <li>VREH_Arrogant</li>
+        <li>Learning_Fast</li>
+        <li>AptitudeStrong_Shooting</li>
+        <li>AptitudePoor_Construction</li>
+        <li>AptitudeTerrible_Mining</li>
+        <li>AptitudeStrong_Plants</li>
+        <li>AptitudePoor_Crafting</li>
+        <li>RE_ChemicalSusceptibility</li>
+      </genes>
+    </value>
+  </Operation>
+</Patch>

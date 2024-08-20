@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="Genie"]/iconPath</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Genie"]</xpath>
+      <value>
+        <iconPath />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Genie"]/iconPath</xpath>
+    <value>
+      <iconPath>UI/Icons/Xenotypes/Genie</iconPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="Genie"]/inheritable</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Genie"]</xpath>
+      <value>
+        <inheritable />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Genie"]/inheritable</xpath>
+    <value>
+      <inheritable>false</inheritable>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="Genie"]/label</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Genie"]</xpath>
+      <value>
+        <label />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Genie"]/label</xpath>
+    <value>
+      <label>Genie</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="Genie"]/genes</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="Genie"]</xpath>
+      <value>
+        <genes />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Genie"]/genes</xpath>
+    <value>
+      <genes>
+        <li>VRE_BlueBlood</li>
+        <li>VRE_Slow_Diseases</li>
+        <li>VRE_Immunity_VeryWeak</li>
+        <li>WoundHealing_VerySlow</li>
+        <li>VRE_Hemophiliac</li>
+        <li>PsychicAbility_Enhanced</li>
+        <li>AG_ToxResist_Vulnerability</li>
+        <li>Aggression_DeadCalm</li>
+        <li>Delicate</li>
+        <li>Pain_Extra</li>
+        <li>Hair_BaldOnly</li>
+        <li>Beard_NoBeardOnly</li>
+        <li>VRE_ElongatedHead</li>
+        <li>Body_Thin</li>
+        <li>AG_ThirdEye</li>
+        <li>ElongatedFingers</li>
+        <li>Learning_Fast</li>
+        <li>AptitudePoor_Plants</li>
+        <li>AptitudePoor_Animals</li>
+        <li>VRE_AptitudePhenomenal_Crafting</li>
+        <li>AptitudeTerrible_Social</li>
+        <li>AptitudeRemarkable_Intellectual</li>
+        <li>VRE_Curiosity_Intellectual</li>
+        <li>AddictionResistant_VRE_Antibiotics</li>
+      </genes>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Highmate</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/GeneDef[defName="VRE_PerfectBody"]/fur</xpath>
+            <value>
+            <fur>Custom_PerfectBody</fur>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/GeneDef[defName="VRE_PerfectBody"]/exclusionTags</xpath>
+          <value>
+            <li>Has_Female_Variants</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Phytokin</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/GeneDef[defName="VRE_BarkSkin"]/fur</xpath>
+            <value>
+            <fur>DevDesigner_BarkSkin</fur>
+          </value>
+        </li> 
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Archon</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/fur</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/skinIsHairColor</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/tattoosVisible</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/renderNodeProperties</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/modExtensions</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
