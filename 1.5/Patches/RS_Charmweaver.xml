@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]/iconPath</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]</xpath>
+      <value>
+        <iconPath />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]/iconPath</xpath>
+    <value>
+      <iconPath>UI/Icons/Xenotypes/NEWCharmweavers</iconPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]/inheritable</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]</xpath>
+      <value>
+        <inheritable />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]/inheritable</xpath>
+    <value>
+      <inheritable>false</inheritable>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]/label</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]</xpath>
+      <value>
+        <label />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]/label</xpath>
+    <value>
+      <label>Charmweaver</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]/genes</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]</xpath>
+      <value>
+        <genes />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="RS_Charmweaver"]/genes</xpath>
+    <value>
+      <genes>
+        <li>Ageless</li>
+        <li>ArchiteMetabolism</li>
+        <li>XenogermReimplanter</li>
+        <li>RS_Matrianic</li>
+        <li>RS_MultiPregnancy</li>
+        <li>DiseaseFree</li>
+        <li>RS_TemperatureInsensitive</li>
+        <li>BS_CannotWearClothingOrArmor</li>
+        <li>Hemogenic</li>
+        <li>HemogenDrain</li>
+        <li>RS_LoveFeed</li>
+        <li>Bloodfeeder</li>
+        <li>RS_Lovehexer</li>
+        <li>WoundHealing_Fast</li>
+        <li>Superclotting</li>
+        <li>BS_Glamour</li>
+        <li>MoveSpeed_Quick</li>
+        <li>NakedSpeed</li>
+        <li>MeleeDamage_Weak</li>
+        <li>LowSleep</li>
+        <li>Delicate</li>
+        <li>VRE_Flirty</li>
+        <li>RS_Libido_Extreme</li>
+        <li>RS_Tail_Spiked</li>
+        <li>RS_Beauty_Angelic</li>
+        <li>RS_Eyes_Pink</li>
+        <li>RS_Headbone_LargeHorns</li>
+        <li>RS_Headbone_MediumHorns</li>
+        <li>RS_Headbone_RamHorns</li>
+        <li>VRE_PerfectBody</li>
+        <li>Body_Standard</li>
+        <li>RS_Skin_PaleGreen</li>
+        <li>Skin_PaleRed</li>
+        <li>Skin_Purple</li>
+        <li>Skin_Blue</li>
+        <li>RS_Naturalist</li>
+        <li>RS_Wing_Batlike</li>
+        <li>Learning_Slow</li>
+        <li>AptitudePoor_Shooting</li>
+        <li>AptitudePoor_Melee</li>
+        <li>AptitudeRemarkable_Social</li>
+      </genes>
+    </value>
+  </Operation>
+</Patch>
