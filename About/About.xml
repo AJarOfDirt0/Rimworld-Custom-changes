@@ -6,7 +6,7 @@
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
-  <description>Exported xenotypes storage.</description>
+  <description>My custom stuff.</description>
   <modDependencies>
     <li>
       <packageId>Ludeon.RimWorld.Biotech</packageId>
@@ -35,5 +35,4 @@
     <li>tiagocc0.FemaleBodyVariants</li>
   </incompatibleWith>
 
-  <description>Template</description>
 </ModMetaData>

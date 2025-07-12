@@ -2,6 +2,22 @@
 <Patch>
 
   <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Highmate</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/GeneDef[defName="VRE_PerfectBody"]/exclusionTags</xpath>
+          <value>
+            <li>Has_Female_Variants</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
 	<mods>
 		<li>Vanilla Races Expanded - Saurid</li>
 	</mods>

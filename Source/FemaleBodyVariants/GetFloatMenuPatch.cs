@@ -1,3 +1,4 @@
+using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using UnityEngine;
@@ -50,8 +51,13 @@ namespace FemaleBodyVariants
             string graphicPath = __result;
             if (pawn.gender != Gender.Male && graphicPath != null && !graphicPath.Contains("_Female") && (graphicPath.Contains("_Thin") || graphicPath.Contains("_Fat") || graphicPath.Contains("_Hulk")))
             {
-                graphicPath += "_Female";
-                __result = graphicPath;
+                foreach (Gene gene in pawn.genes.GenesListForReading) {
+                    if (gene.def.exclusionTags?.Contains("Has_Female_Variants") == true)
+                    {
+                        graphicPath += "_Female";
+                        __result = graphicPath;
+                    }
+                }
             }
         }
     }
