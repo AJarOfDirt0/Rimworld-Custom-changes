@@ -1,110 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Races Expanded - Highmate</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/GeneDef[defName="VRE_PerfectBody"]/exclusionTags</xpath>
-          <value>
-            <li>Has_Female_Variants</li>
-          </value>
-        </li>
-      </operations>
-    </match>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Highmate</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="VRE_PerfectBody"]/exclusionTags</xpath>
+                    <value>
+                        <li>Has_Female_Variants</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 
-  <Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Races Expanded - Saurid</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/FurDef[defName="VRESaurids_ScaleSkin"]/bodyTypeGraphicPaths/Child</xpath>
-				<value>
-				  <Child>Pawn/ScalySkin/ScalySkin_Child</Child>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/FurDef[defName="VRESaurids_ScaleSkin"]/bodyTypeGraphicPaths/Baby</xpath>
-				<value>
-				  <Baby>Pawn/ScalySkin/ScalySkin_Child</Baby>
-				</value>
-			</li>				
-		</operations>
-	</match>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Saurid</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/FurDef[defName="VRESaurids_ScaleSkin"]/bodyTypeGraphicPaths/Child</xpath>
+                    <value>
+                        <Child>Pawn/ScalySkin/ScalySkin_Child</Child>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/FurDef[defName="VRESaurids_ScaleSkin"]/bodyTypeGraphicPaths/Baby</xpath>
+                    <value>
+                        <Baby>Pawn/ScalySkin/ScalySkin_Child</Baby>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 
-  <Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Races Expanded - Phytokin</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/FurDef[defName="VRE_BarkSkin"]/bodyTypeGraphicPaths/Child</xpath>
-				<value>
-				  <Child>Things/Pawn/Humanlike/Bodies/BarkSkin_Child</Child>
-				</value>
-			</li>			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/FurDef[defName="VRE_BarkSkin"]/bodyTypeGraphicPaths/Baby</xpath>
-				<value>
-				  <Baby>Things/Pawn/Humanlike/Bodies/BarkSkin_Child</Baby>
-				</value>
-			</li>
-		</operations>
-	</match>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Phytokin</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/FurDef[defName="VRE_BarkSkin"]/bodyTypeGraphicPaths/Child</xpath>
+                    <value>
+                        <Child>Things/Pawn/Humanlike/Bodies/BarkSkin_Child</Child>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/FurDef[defName="VRE_BarkSkin"]/bodyTypeGraphicPaths/Baby</xpath>
+                    <value>
+                        <Baby>Things/Pawn/Humanlike/Bodies/BarkSkin_Child</Baby>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 
-  <Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Vanilla Races Expanded - Insector</li>
-	</mods>
-	<match Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/FurDef[defName="VRE_InsectSkin"]/bodyTypeGraphicPaths/Child</xpath>
-				<value>
-				  <Child>Things/Pawn/Humanlike/Bodies/Insectskin_Child</Child>
-				</value>
-			</li>			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/FurDef[defName="VRE_InsectSkin"]/bodyTypeGraphicPaths/Baby</xpath>
-				<value>
-				  <Baby>Things/Pawn/Humanlike/Bodies/Insectskin_Child</Baby>
-				</value>
-			</li>
-		</operations>
-	</match>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Insector</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/FurDef[defName="VRE_InsectSkin"]/bodyTypeGraphicPaths/Child</xpath>
+                    <value>
+                        <Child>Things/Pawn/Humanlike/Bodies/Insectskin_Child</Child>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/FurDef[defName="VRE_InsectSkin"]/bodyTypeGraphicPaths/Baby</xpath>
+                    <value>
+                        <Baby>Things/Pawn/Humanlike/Bodies/Insectskin_Child</Baby>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Races Expanded - Archon</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
-        <li Class="PatchOperationRemove">
-          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/fur</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/skinIsHairColor</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/tattoosVisible</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/renderNodeProperties</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/modExtensions</xpath>
-        </li>
-      </operations>
-    </match>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Archon</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/fur</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/skinIsHairColor</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/tattoosVisible</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/renderNodeProperties</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/modExtensions</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>

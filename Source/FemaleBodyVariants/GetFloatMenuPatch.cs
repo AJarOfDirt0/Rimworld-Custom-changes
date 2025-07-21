@@ -51,7 +51,8 @@ namespace FemaleBodyVariants
             string graphicPath = __result;
             if (pawn.gender != Gender.Male && graphicPath != null && !graphicPath.Contains("_Female") && (graphicPath.Contains("_Thin") || graphicPath.Contains("_Fat") || graphicPath.Contains("_Hulk")))
             {
-                foreach (Gene gene in pawn.genes.GenesListForReading) {
+                foreach (Gene gene in pawn.genes.GenesListForReading)
+                {
                     if (gene.def.exclusionTags?.Contains("Has_Female_Variants") == true)
                     {
                         graphicPath += "_Female";
